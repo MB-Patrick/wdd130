@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+  
 
 body {
   font-family: var(--body-font);
@@ -21,12 +22,17 @@ body {
 header, main, footer {
   width: 840px;
   margin: 0 auto;
+  
 }
 
+footer p{
+ color: var(--accent2-color);
+}
 
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  background-color: var(--secondary-color)
 }
 
 nav, p, section, article {
@@ -46,11 +52,12 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
 
 h1 {
   position: absolute;
   top: 20px;
+  left: 0;
   width: 100%;
   padding: 16px;
   text-align: center;
@@ -62,5 +69,17 @@ h1 {
 .hero article img {
   float: right;
   width: 125px;
+  
+  
+}
+
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
 }
 
