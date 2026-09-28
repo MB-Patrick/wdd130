@@ -144,21 +144,21 @@ footer{
   align-items: center;
   padding: 10px;
   text-align: center;
-  color: white
+  color: #fff
 } 
 
 nav a {
   display: block;
   text-decoration: none;
   color: #333;
-  background: white;
+  background: #fff;
   padding: 8px 25px;
   font-size: 14px;
 }
 
 nav a:hover{
-  background: #f4a261;
-  color: white;
+  background: var(--accent2-color);
+  color: #fff;
 }
 nav li{
   border: 1px solid white;
