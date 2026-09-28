@@ -10,14 +10,21 @@ body {
 }
 
 nav {
- background-color: darkblue;
+ background-color: steelblue;
  padding: 10px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
 }
 
 nav a {
  color: white;
  display: block;
  padding: 20px;
+ text-decoration: none;
+ font-size: 1.2rem;
+ font-weight: 700;
+ color: #fff;
 }
 
 h1 {
@@ -37,7 +44,8 @@ p {
 }
 
 main{
- max-width: 840px;
+ grid-column: 2/3;
+ align-items: 1rem;
 }
 
 aside{
@@ -49,6 +57,8 @@ aside{
  color: #333;
  text-align: center;
  position: relative;
+ grid-column: 1/2;
+ grid-row: 1/2;
 }
 
 aside img{
@@ -59,7 +69,7 @@ aside img{
 aside h2{
   position: absolute;
   top: 47px;
-  left: 70px;
+  left: 63px;
 }
 main img{
  width: 150px;
@@ -87,71 +97,18 @@ footer{
  padding: 1rem;
  background-color: #ddd;
  color: #000;
+
+
 }
+ 
 
-
-
-:root {
-  --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-}
-
-header, main, footer {
-  width: 840px;
+header, .grid, footer{
+  max-width: 840px;
   margin: 0 auto;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+.grid{
+  display: grid;
+  align-items: center;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-}
