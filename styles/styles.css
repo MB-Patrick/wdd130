@@ -1,114 +1,129 @@
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+/* This my week 3 css progress up nav */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
- font-size: 16px;
- font-family: Roboto, Arial, sans-serif;
-}
 
-nav {
- background-color: steelblue;
- padding: 10px;
- display: flex;
- justify-content: space-evenly;
- align-items: center;
-}
+nav{
+  background-color: darkblue;
+  padding: 10px;  
+} 
 
-nav a {
- color: white;
- display: block;
- padding: 20px;
- text-decoration: none;
- font-size: 1.2rem;
- font-weight: 700;
- color: #fff;
+nav a{
+  color: white;
+  display: block;
+  padding: 20px;
 }
 
 h1 {
- color: darkblue
+  color: darkblue
 }
 
 img{
- width: 150px;
- height: auto;
- border: 1px solid black;
-padding: 2px;
-box-shadow: 0 0 30px gray;
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
 }
 
-p {
- padding: 0px;
+p{
+  padding: 10px;
 }
 
-main{
- grid-column: 2/3;
- align-items: 1rem;
+/*main{
+  max-width: 840px; This one replaced by footer.
 }
+*/
 
 aside{
- width: 20rem;
- margin: 1rem;
- border: 1px solid rgb(0 0 0 / 0.2);
- padding: 1rem;
- background-color: #eee;
- color: #333;
- text-align: center;
- position: relative;
- grid-column: 1/2;
- grid-row: 1/2;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background: #eee;
+  color: #333;
+  text-align: center;
 }
 
 aside img{
- width: 200px;
- height: auto;
+  width: 200px;
+  height: auto;
+}
+
+main img{
+  width: 150px;
+  height: auto;
+}
+
+p{
+  padding: 0;
+}
+
+footer{
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* This my week 3 css progress up nav */
+.box{
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+main img{
+  float: right;
 }
 
 aside h2{
   position: absolute;
-  top: 47px;
-  left: 63px;
-}
-main img{
- width: 150px;
- height: auto;
- border: 1px solid black;
- padding: 2px;
- box-shadow: 0 0 30px gray;
- float: right
+  top:47px;
+  left: 70px;
 }
 
-p{
- padding: 0px;
-}
-
-footer{
- margin-top: 15px;
- border-top: 1px solid #000;
- text-align: center;
-}
-
-/* Class selectors*/
-.box {
- margin: 1rem;
- border: 1px solid rgb(0 0 0 / 10%);
- padding: 1rem;
- background-color: #ddd;
- color: #000;
-
-
-}
- 
-
-header, .grid, footer{
+header, footer, .grid{
   max-width: 840px;
   margin: 0 auto;
+}
+
+nav{
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a{
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-size: 700;
+  color: #fff;
 }
 
 .grid{
   display: grid;
   align-items: center;
 }
+
+main{
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside{
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
 
