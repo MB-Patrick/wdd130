@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - White Water Rafting</title>
-  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <meta name="description" content="This web is a contact us page that users must provide their personal info">
+  <meta name="author" content="M-B Patrick">
 </head>
 <body>
   <header>
@@ -31,26 +33,34 @@
       </div>
 
       <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Placeholder">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Placeholder">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Placeholder">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Placeholder">
 
-        <label>Message Purpose</label>
-        <div class="radio-group">
-          <label><input type="radio" name="purpose" checked> General Inquiry</label>
-          <label><input type="radio" name="purpose"> Reservation Question</label>
-          <label><input type="radio" name="purpose"> Website Suggestion</label>
-        </div>
+  <label>Message Purpose</label>
+  <div class="radio-group">
+    <label for="purpose-general">
+      <input type="radio" id="purpose-general" name="purpose" value="general" checked> General Inquiry
+    </label>
+    <label for="purpose-reservation">
+      <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
+    </label>
+    <label for="purpose-website">
+      <input type="radio" id="purpose-website" name="purpose" value="website"> Website Suggestion
+    </label>
+  </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Type here..."></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Type here..."></textarea>
 
-        <label class="check"><input type="checkbox"> Please Subscribe me to the monthly newsletter</label>
+  <label for="newsletter" class="check">
+    <input type="checkbox" id="newsletter" name="newsletter"> Please Subscribe me to the monthly newsletter
+  </label>
 
-        <button type="submit">Get in Touch!</button>
-      </form>
+  <button type="submit">Get in Touch!</button>
+</form>
     </div>
 
     <section class="employees">
@@ -73,12 +83,11 @@
   </main>
 
   <footer>
-    <p>©2026 White Water Rafting | M. Patrick</p>
-    <nav class="sociallinks">
-      <a href="#"><img src="images/facebook.svg" alt="FB" width="200"></a>
-      <a href="#"><img src="images/linkedin.svg" alt="TW" width="200"></a>
-      <a href="#"><img src="images/instagram.svg" alt="IG" width="200"></a>
-    </nav>
+    <p>©2026 White Water Rafting | M-B Patrick</p>
+    <nav class="socialmedia">
+    <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+    <a href="https://twitter.com"><img src="images/linkedin.svg" alt="Twitter"></a>
+    <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
   </footer>
 </body>
 </html>
