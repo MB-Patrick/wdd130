@@ -93,7 +93,7 @@ header{
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  background-color: #055a05;
+  background-color: var(--primary-color);
   padding: 20px 20px;
 }
 
@@ -182,10 +182,11 @@ nav li{
   top:20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(42, 127, 98, 0.7);
+  background-color: var(--accent1-color);
   color:white;
-  padding: 10px 20px;
-  width:auto;
+  padding: 10px 20p;
+  font-style: italic;
+  font-size: 45px;
 }
 
 .home-grid{
@@ -207,25 +208,34 @@ nav li{
 
 .newsletter form{
   display: grid;
-  gap: 12px;
+  gap: 11px;
 }
 
 .newsletter input, .newsletter button{
-  padding: 3px;
+  padding: 4px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .newsletter button:hover{
   background: var(--primary-color);
   color: white;
+
 }
 
 .newsletter h2{
   background: none;
   text-align: center;
+  margin:10px;
 }
+
+.newsletter form label {
+  font-style: italic;
+  text-align: center;
+
+}
+
 
 .me-act{
   text-align: center;
@@ -292,15 +302,21 @@ nav li{
   padding: 0 15px 20px;
 }
 
-/* This the trips css */
+
+
+/* This is the trips css */
 .trips-main h1 {
   background: none;
   color: var(--primary-color);
   text-align: center;
-  margin: 50px 0 10px;
-  padding: 10px 0;
+  margin: 55px auto 10px auto;
   box-shadow: none;
+  width: 100%;
+  display: block;
+  padding-left: 0;
+  font-size: 40px;
 }
+
 
 .trips-main .trips-cta {
   max-width: 700px;
@@ -536,3 +552,9 @@ nav li{
 .employee-profiles img { width:100%; height:160px; background:#ddd; border:1px solid var(--primary-color); object-fit: cover; border-radius: 8px; display: block;}
 .employee-profiles figcaption { font-size:15px; margin-top:6px; } 
 
+
+/* Here i am fixing the phone size so that my clients can get the website clean */
+.trips-main h1, .contact-main h1, .contact-main h2{text-align:center;background:none;color:var(--primary-color);width:100%}
+@media(max-width:768px){
+.contact-grid,.trips-grid,.employees{grid: template columns 1fr;}
+}
