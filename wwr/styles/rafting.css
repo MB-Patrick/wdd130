@@ -320,14 +320,12 @@ nav li{
 
 .trips-main h1 {
   position: absolute;
-  top:20%;
+  top:25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--accent1-color);
   color: var(--accent1-color);
   padding: 10px 20px;
   font-style: italic;
-  font-size: 45px;
   background: none;
 }
 
@@ -437,12 +435,13 @@ nav li{
 
 .contact-main h1{
   position: absolute;
-
-  background: none;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--accent1-color);
+  padding: 10px 20px;
   font-style: italic;
-  font-size: 40px;
-  text-align: center;
+  background: none;
 }
 
 .contact-main p, .contact-main div{
