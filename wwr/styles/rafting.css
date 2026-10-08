@@ -320,18 +320,20 @@ nav li{
 
 .trips-main h1 {
   position: absolute;
-  top:20px;
-  left: 0;
+
+
   width: 100%;
   padding: 16px;
   text-align: center;
-  top:20%;
+
   opacity: 0.7;
   background-color:var(--accent1-color);
   color: var(--accent1-color);
   font-style: italic;
   font-size: 40px;
   background: none;
+ 
+
 }
 
 .trips-main p{
@@ -339,7 +341,7 @@ nav li{
   font-style: oblique;
 }
 
-.trips-main ,.trips-cta {
+.trips-main .trips-cta {
   max-width: 700px;
   margin: 60px auto;
   padding: 55px;
@@ -439,7 +441,7 @@ nav li{
 
 .contact-main h1{
   position: absolute;
-  top: 20%;
+
   background: none;
   color: var(--accent1-color);
   font-style: italic;
