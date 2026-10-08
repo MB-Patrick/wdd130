@@ -26,7 +26,8 @@ header, main, footer {
 }
 
 footer p{
- color: var(--accent2-color);
+ color: #000;
+ font-style: oblique;
 }
 
 
@@ -323,7 +324,7 @@ nav li{
 
 
 .trips-main p{
-  color: #f2f8f2;
+  color:#f2f8f2;
   font-style: oblique;
 }
 
@@ -364,7 +365,6 @@ nav li{
   padding: 20px;
 }
 .trips-main .trip-card {
-  background: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
@@ -372,15 +372,12 @@ nav li{
 }
 .trips-main .trip-card img {
   width: 100%;
-  height: 180px;
   object-fit: cover;
 }
 .trips-main .trip-card h3 {
   background: none;
   color: var(--primary-color);
   font-style: italic;
-  text-align: center;
-  margin: 12px 0 6px;
 }
 .trips-main .trip-card p {
   font-style: italic;
@@ -399,7 +396,7 @@ nav li{
   background: none;
   text-align: center;
   font-style: italic;
-  color: var(--secondary-color);
+  color: #000;
   margin-bottom: 15px;
 }
 .trips-main .trips-table {
