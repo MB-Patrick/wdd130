@@ -95,19 +95,11 @@ h1 {
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 120px 1fr;
   align-items: center;
   background-color: var(--primary-color);
-  padding: 10px 20px;
-}
-
-/* This one is because my website was not displaying well on my phone */
-@media screen and (max-width:768px){
-  header{
-    flex-direction: column;
-    text-align: center;
-  }
+  padding: 20px 20px;
 }
 
 header img{
@@ -325,11 +317,6 @@ nav li{
 
 
 /* This is the trips css */
-.trips-main, .contact-main{
-  padding: 10px;
-
-
-}
 
 .trips-main h1 {
   position: absolute;
@@ -345,7 +332,6 @@ nav li{
   font-style: italic;
   font-size: 40px;
   background: none;
-  margin-top: 20px;
 }
 
 .trips-main p{
@@ -353,7 +339,7 @@ nav li{
   font-style: oblique;
 }
 
-.trips-main .trips-cta {
+.trips-main ,.trips-cta {
   max-width: 700px;
   margin: 60px auto;
   padding: 55px;
@@ -458,7 +444,7 @@ nav li{
   color: var(--accent1-color);
   font-style: italic;
   font-size: 40px;
-  margin-top: 10px;
+  text-align: center;
 }
 
 .contact-main p, .contact-main div{
