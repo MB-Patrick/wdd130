@@ -314,8 +314,7 @@ nav li{
   top:24%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--accent1-color);
-  color: var(--secondary-color);
+  color: var(--accent1-color);
   padding: 10px 20px;
   font-style: italic;
   font-size: 45px;
